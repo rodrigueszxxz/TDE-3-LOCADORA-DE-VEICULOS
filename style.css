@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* === MENU DE NAVEGAÇÃO === */
+nav {
+    background-color: #1a1a2e;
+    padding: 14px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Logo/título da nav */
+nav .nav-titulo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: auto; /* empurra os links para a direita */
+}
+
+/* Links do menu */
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+nav a:hover, nav a.ativo {
+    background-color: #e94560;
+    color: white;
+}
+
+/* === CONTEÚDO PRINCIPAL === */
+.pagina {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #1a1a2e;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #16213e;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 6px;
+    margin-top: 0;
+}
+
+/* === LAYOUT EM DUAS COLUNAS === */
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Coluna do formulário */
+.col-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 320px;
+    flex-shrink: 0; /* não encolhe */
+}
+
+/* Coluna da tabela */
+.col-lista {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* === FORMULÁRIO === */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Botão principal (salvar/atualizar) */
+button[type="submit"] {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #c73652;
+}
+
+/* Link cancelar edição */
+.btn-cancelar {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-cancelar:hover { color: #333; }
+
+/* === MENSAGEM DE FEEDBACK === */
+.mensagem {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+/* === TABELA === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* Links de ação na tabela */
+.btn-editar {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-excluir {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* Quando não há dados */
+.sem-dados {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+    font-style: italic;
+}
